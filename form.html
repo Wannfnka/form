@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Membuat Form Pendaftaran</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="container">
+            <header>Form Pendaftaran</header>
+            <form class="form" action="#">
+                <div class="input-box">
+                    <label> Nama Lengkap</label>
+                    <input type="text" placeholder="Masukan Nama Lengkap"required>
+                </div>
+                <div class="input-box">
+                    <label> Email</label>
+                    <input type="text" placeholder="Masukan Email"required>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label>Nomor Telephone</label>
+                        <input type="number" placeholder="Masukan Nomor Telephone"required>
+                    </div>
+                    <div class="input-box">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" placeholder="Masukan Tanggal Lahir"required>
+                    </div>
+                </div>
+                <div class="Gender">
+                    <h3> Jenis Kelamin</h3>
+                    <div class="Gender-option">
+                        <div class="gdr">
+                            <input type="radio" id="pria" name="Gender" checked>
+                            <label for="pria">Pria</label>
+                        </div>
+                        <div class="gdr">
+                            <input type="radio" id="Wanita" name="Gender" checked>
+                            <label for="wanita">Wanita</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box address">
+                    <label>Alamat</label>
+                    <input type="text" placeholder="Masukan Nama Jalan/Gang" required>
+                    <input type="text" placeholder="Masukan Alamat Desa" required>
+                    <div class="column">
+                        <div class="select-box">   
+                            <select>
+                                <option hidden>Kabupaten/kota</option>
+                                <option>Kotabaru</option>
+                                <option>Banjar</option>
+                                <option>Balangan</option>
+                                <option>Tabalong</option>
+                                <option>Tanah Laut</option>
+                            </select>                        
+                        </div>
+                        <input type="text" placeholder="Masukan Nama Kecamatan" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="Masukan Nama Desa" required>
+                        <input type="number" placeholder="Masukan Kode Pos" required>
+                    </div>
+                </div>
+                <button>Daftar</button>
+            </form>
+        </section>
+    </body>
+</html>
